@@ -1,0 +1,3133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Buenos Aires | Restaurant Argentin - Bruxelles</title>
+    <meta name="description" content="Restaurant argentin authentique à Bruxelles depuis 2001. Viande Angus grillée, empanadas, vins argentins. Quartier Châtelain.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lanuevabuenosaires.be/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:title" content="Nueva Buenos Aires | Restaurant Argentin - Bruxelles">
+    <meta property="og:description" content="Restaurant argentin authentique à Bruxelles depuis 2001. Viande Angus grillée, empanadas, vins argentins.">
+    <meta property="og:url" content="https://www.lanuevabuenosaires.be/">
+    <meta property="og:locale" content="fr_BE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Nueva Buenos Aires | Restaurant Argentin">
+    <meta name="twitter:description" content="Restaurant argentin authentique à Bruxelles depuis 2001.">
+
+    <!-- Favicon Beef - Lucide -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23722F37' stroke='%23C9A962' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12.5' cy='8.5' r='2.5'/%3E%3Cpath d='M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3A6.5 6.5 0 0 0 12.5 2'/%3E%3Cpath d='m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5'/%3E%3C/svg%3E">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-burgundy: #722F37;
+            --color-burgundy-dark: #4A1C21;
+            --color-burgundy-light: #8B3A44;
+            --color-cream: #FAF7F2;
+            --color-cream-dark: #EDE8DF;
+            --color-gold: #C9A962;
+            --color-gold-light: #D4BC7D;
+            --color-charcoal: #1A1A1A;
+            --color-charcoal-light: #2D2D2D;
+            --color-text: #3A3A3A;
+            --color-text-light: #6B6B6B;
+
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Montserrat', -apple-system, sans-serif;
+
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            color: var(--color-text);
+            background-color: var(--color-cream);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Grain Texture Overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 9999;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        nav.scrolled {
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 4rem;
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--color-cream);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .nav-logo-icon {
+            width: 28px;
+            height: 28px;
+            fill: var(--color-burgundy);
+            stroke: var(--color-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--color-cream);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--color-gold);
+            transition: width 0.3s var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--color-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-burgundy-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 30% 20%, rgba(201, 169, 98, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at 70% 80%, rgba(114, 47, 55, 0.2) 0%, transparent 50%);
+        }
+
+        /* Heat Distortion Layer */
+        .heat-haze-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 800px;
+            z-index: 3;
+            pointer-events: none;
+            backdrop-filter: url(#heat-distortion);
+            -webkit-backdrop-filter: url(#heat-distortion);
+            mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.3) 80%, transparent 100%);
+            animation: heatPass 5s linear infinite;
+        }
+
+        @keyframes heatPass {
+            0% {
+                left: -800px;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            max-width: 900px;
+        }
+
+        .hero-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.2s forwards;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            color: var(--color-cream);
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            opacity: 0;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.4s forwards;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--color-gold);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--color-cream);
+            opacity: 0;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.6s forwards;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--color-gold);
+            color: var(--color-charcoal);
+            padding: 1.1rem 2.5rem;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s var(--transition-smooth);
+            opacity: 0;
+            animation: fadeInUp 0.8s var(--transition-smooth) 0.8s forwards;
+        }
+
+        .hero-cta:hover {
+            background: var(--color-cream);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 8rem 4rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--color-charcoal);
+        }
+
+        .section-title em {
+            font-style: italic;
+            color: var(--color-burgundy);
+        }
+
+        .divider {
+            width: 80px;
+            height: 1px;
+            background: var(--color-gold);
+            margin: 2rem auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--color-cream);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .about-grid-centered {
+            grid-template-columns: 1fr;
+            max-width: 800px;
+        }
+
+        .about-image {
+            position: relative;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 1px solid var(--color-gold);
+            z-index: -1;
+        }
+
+        .about-image-inner {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-burgundy-dark) 0%, var(--color-burgundy) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image-text {
+            font-family: var(--font-display);
+            font-size: 6rem;
+            font-style: italic;
+            color: var(--color-gold);
+            opacity: 0.3;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        .about-content h3 {
+            font-size: 2rem;
+            color: var(--color-burgundy);
+            margin-bottom: 2rem;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            line-height: 2;
+            color: var(--color-text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-burgundy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .feature-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--color-gold);
+            fill: none;
+        }
+
+        .feature-text {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-charcoal);
+        }
+
+        /* Menu Section */
+        .menu {
+            background: var(--color-charcoal);
+            position: relative;
+        }
+
+        .menu::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(114, 47, 55, 0.2) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .menu .section-title {
+            color: var(--color-cream);
+        }
+
+        .menu-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--color-cream);
+            opacity: 0.7;
+        }
+
+        .menu-categories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 70px;
+            z-index: 100;
+            padding: 1.5rem 2rem;
+            margin-left: -4rem;
+            margin-right: -4rem;
+            background: linear-gradient(180deg, var(--color-charcoal) 0%, var(--color-charcoal) 85%, transparent 100%);
+        }
+
+        .menu-category-btn {
+            background: transparent;
+            border: 1px solid rgba(201, 169, 98, 0.3);
+            padding: 0.75rem 2rem;
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-cream);
+            cursor: pointer;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .menu-category-btn:hover,
+        .menu-category-btn.active {
+            background: var(--color-gold);
+            border-color: var(--color-gold);
+            color: var(--color-charcoal);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu-item {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 4px;
+            padding: 1.5rem 1.75rem;
+            transition: all 0.4s var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--color-gold);
+            transform: scaleY(0);
+            transition: transform 0.3s var(--transition-smooth);
+        }
+
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(201, 169, 98, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-item:hover::before {
+            transform: scaleY(1);
+        }
+
+        .menu-item,
+        .menu-category-label {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
+        }
+
+        .menu-item.visible,
+        .menu-category-label.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            gap: 1rem;
+        }
+
+        .menu-item-name {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: var(--color-cream);
+            line-height: 1.3;
+        }
+
+        .menu-item-price {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: var(--color-gold);
+            white-space: nowrap;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .menu-item-desc {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .menu-item-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .menu-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 3px;
+        }
+
+        .menu-tag.signature {
+            background: rgba(201, 169, 98, 0.3);
+            color: #d4a94a;
+            border: 1px solid rgba(201, 169, 98, 0.6);
+        }
+
+        .menu-item-price.market {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .menu-category-label {
+            grid-column: 1 / -1;
+            padding: 2rem 0 1rem;
+            border-bottom: 1px solid rgba(201, 169, 98, 0.2);
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-category-label h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--color-gold);
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .menu-category-label h3::before {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--color-gold);
+        }
+
+        .menu-category-label p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 0.5rem;
+            margin-left: 46px;
+        }
+
+        .menu-note {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem 2.5rem;
+            border: 1px solid rgba(201, 169, 98, 0.3);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            background: rgba(201, 169, 98, 0.05);
+        }
+
+        .menu-note-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .menu-note-content svg {
+            color: var(--color-gold);
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+        }
+
+        .menu-note-content p {
+            font-size: 0.9rem;
+            color: var(--color-cream);
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .menu-note-content p strong {
+            color: var(--color-gold);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .menu-note-content p span {
+            opacity: 0.7;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Hours Section */
+        .hours {
+            background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+        }
+
+        .hours-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Today's Schedule Card */
+        .today-schedule {
+            display: none;
+            max-width: 420px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border: 1px solid rgba(201, 169, 98, 0.15);
+        }
+
+        .today-schedule.is-visible {
+            display: block;
+        }
+
+        .today-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .today-day {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--color-burgundy);
+            margin-bottom: 0.25rem;
+        }
+
+        .today-date {
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 500;
+        }
+
+        /* Service Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .service-card {
+            position: relative;
+            padding: 1.5rem 1.25rem;
+            border-radius: 12px;
+            background: var(--color-cream);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid var(--color-cream-dark);
+        }
+
+        .service-card.is-next {
+            border-color: var(--color-gold);
+            background: white;
+            box-shadow: 0 4px 20px rgba(201, 169, 98, 0.25);
+            animation: nextPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes nextPulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(201, 169, 98, 0.25); }
+            50% { box-shadow: 0 4px 25px rgba(201, 169, 98, 0.4); }
+        }
+
+        .service-card.na {
+            opacity: 0.4;
+        }
+
+        .service-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card.is-next .service-label {
+            color: var(--color-burgundy);
+            font-weight: 700;
+        }
+
+        .service-time {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--color-charcoal);
+        }
+
+        .service-card.is-next .service-time {
+            color: var(--color-burgundy);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .next-badge {
+            display: none;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: white;
+            background: var(--color-gold);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-top: 0.75rem;
+        }
+
+        .service-card.is-next .next-badge {
+            display: inline-block;
+        }
+
+        .service-status {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            margin-top: 0.75rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Active State */
+        .service-card.is-active {
+            background: var(--color-charcoal);
+        }
+
+        .service-card.is-active .service-label {
+            color: var(--color-gold);
+        }
+
+        .service-card.is-active .service-time {
+            color: white;
+        }
+
+        .service-card.is-active .service-status.en-cours {
+            display: flex;
+            color: var(--color-gold);
+        }
+
+        .service-card.is-active .spinner {
+            width: 8px;
+            height: 8px;
+            border: 1.5px solid transparent;
+            border-top-color: var(--color-gold);
+            border-right-color: var(--color-gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Finished State */
+        .service-card.is-finished {
+            opacity: 0.7;
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .service-card.is-finished .service-label {
+            color: var(--color-text-light);
+        }
+
+        .service-card.is-finished .service-time {
+            text-decoration: line-through;
+            text-decoration-color: rgba(0,0,0,0.3);
+            color: var(--color-text-light);
+        }
+
+        .service-card.is-finished .service-status.fini {
+            display: flex;
+            color: var(--color-text-light);
+        }
+
+        .service-card.is-finished .service-status.fini svg {
+            width: 10px;
+            height: 10px;
+            stroke: currentColor;
+            stroke-width: 2.5;
+        }
+
+        /* Closed day */
+        .today-closed {
+            text-align: center;
+            padding: 1rem;
+            color: var(--color-text-light);
+            font-style: italic;
+        }
+
+        /* All Days List */
+        .all-hours {
+            max-width: 420px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-cream-dark);
+        }
+
+        .all-hours-row {
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr;
+            gap: 1rem;
+            padding: 0.5rem 0;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+        }
+
+        .all-hours-row span:first-child {
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        .all-hours-row span:nth-child(2),
+        .all-hours-row span:nth-child(3) {
+            text-align: center;
+        }
+
+        .all-hours-row.is-today {
+            background: var(--color-cream);
+            margin: 0 -1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+        }
+
+        .all-hours-row.is-today span:first-child {
+            color: var(--color-burgundy);
+            font-weight: 600;
+        }
+
+        /* Address Bar */
+        .address-bar {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .address-bar-content {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .address-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--color-charcoal);
+            color: var(--color-cream);
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .address-link:hover {
+            background: var(--color-burgundy);
+            transform: translateY(-2px);
+        }
+
+        .address-link svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--color-gold);
+            flex-shrink: 0;
+        }
+
+        .phone-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--color-gold);
+            color: var(--color-charcoal);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .phone-link:hover {
+            background: var(--color-gold-light);
+            transform: translateY(-2px);
+        }
+
+        .phone-link svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-charcoal);
+        }
+
+        @media (max-width: 768px) {
+            .service-badges {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .hours-services {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .address-bar-content {
+                flex-direction: column;
+                gap: 0.5rem;
+                border-radius: 12px;
+                padding: 1.5rem;
+            }
+
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--color-gold);
+            color: var(--color-charcoal);
+            padding: 1rem 2rem;
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s var(--transition-smooth);
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background: var(--color-cream);
+            transform: translateY(-2px);
+        }
+
+        .cta-button svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--color-charcoal);
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: var(--color-cream);
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--color-cream);
+            opacity: 0.7;
+            margin-bottom: 3rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-method {
+            text-align: center;
+        }
+
+        .contact-method-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-method-value {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--color-cream);
+        }
+
+        .contact-method-value a {
+            color: var(--color-gold);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s var(--transition-smooth);
+        }
+
+        .contact-method-value a:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-charcoal-light);
+            padding: 4rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--color-cream);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-address {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .footer-payment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-payment span {
+            font-size: 0.75rem;
+            color: var(--color-gold);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .footer-payment svg {
+            color: var(--color-gold);
+        }
+
+        .footer-copyright {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-credit {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.25);
+            margin-top: 1rem;
+        }
+
+        .footer-credit a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .footer-credit a:hover {
+            opacity: 0.7;
+        }
+
+        /* Reserve Button */
+        .reserve-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+            color: var(--color-charcoal);
+            border: none;
+            padding: 1.25rem 3rem;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.4s var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .reserve-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .reserve-btn:hover::before {
+            left: 100%;
+        }
+
+        .reserve-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(201, 169, 98, 0.4);
+        }
+
+        .reserve-btn-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 26, 26, 0.9);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: var(--color-cream);
+            padding: 4rem 3rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            transform: translateY(30px) scale(0.95);
+            transition: all 0.4s var(--transition-smooth);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: translateY(0) scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid var(--color-burgundy);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .modal-close:hover {
+            background: var(--color-burgundy);
+        }
+
+        .modal-close svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--color-burgundy);
+            transition: fill 0.3s;
+        }
+
+        .modal-close:hover svg {
+            fill: var(--color-cream);
+        }
+
+        .modal-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--color-burgundy);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+        }
+
+        .modal-icon svg {
+            width: 36px;
+            height: 36px;
+            fill: var(--color-gold);
+        }
+
+        .modal-title {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--color-burgundy);
+            margin-bottom: 1rem;
+        }
+
+        .modal-text {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .modal-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-charcoal);
+            color: var(--color-cream);
+            padding: 0.75rem 1.5rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .modal-badge img {
+            height: 18px;
+            filter: brightness(0) invert(1);
+        }
+
+        .modal-phone {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-cream-dark);
+        }
+
+        .modal-phone-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-phone-number {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--color-burgundy);
+        }
+
+        .modal-phone-number a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .modal-phone-number a:hover {
+            color: var(--color-gold);
+        }
+
+        .contact-divider {
+            display: flex;
+            align-items: center;
+            margin: 3rem 0;
+        }
+
+        .contact-divider::before,
+        .contact-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(201, 169, 98, 0.3);
+        }
+
+        .contact-divider span {
+            padding: 0 1.5rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            opacity: 0.7;
+        }
+
+        /* Animations on Scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: 5rem 2rem;
+            }
+
+            .about-grid,
+            .hours-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .about-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-methods {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+            position: relative;
+        }
+
+        .hamburger-line {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--color-cream);
+            border-radius: 2px;
+            transition: all 0.35s cubic-bezier(0.77, 0.2, 0.05, 1);
+            transform-origin: center;
+        }
+
+        .hamburger-line:nth-child(1) {
+            margin-bottom: 6px;
+        }
+
+        .hamburger-line:nth-child(3) {
+            margin-top: 6px;
+        }
+
+        /* Hamburger → X animation */
+        .mobile-menu-btn.is-active .hamburger-line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            background: var(--color-gold);
+        }
+
+        .mobile-menu-btn.is-active .hamburger-line:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .mobile-menu-btn.is-active .hamburger-line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+            background: var(--color-gold);
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            pointer-events: none;
+            visibility: hidden;
+            transition: visibility 0s linear 0.35s;
+        }
+
+        .mobile-menu.is-open {
+            pointer-events: auto;
+            visibility: visible;
+            transition: visibility 0s linear 0s;
+        }
+
+        .mobile-menu-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--color-charcoal);
+            opacity: 0;
+            transition: opacity 0.3s ease-in 0.05s;
+        }
+
+        .mobile-menu.is-open .mobile-menu-bg {
+            opacity: 0.98;
+            transition: opacity 0.35s ease-out;
+        }
+
+        .mobile-menu-content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+        }
+
+        .mobile-menu.is-open .mobile-menu-content {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.3s ease-out 0.1s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+        }
+
+        .mobile-menu-header {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+        }
+
+        .mobile-menu-label {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--color-gold);
+            opacity: 0.5;
+        }
+
+        .mobile-menu-links {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-menu-links li {
+            overflow: hidden;
+        }
+
+        .mobile-menu-links a {
+            display: block;
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 8vw, 3rem);
+            color: var(--color-cream);
+            text-decoration: none;
+            padding: 0.5rem 0;
+            position: relative;
+            transform: translateY(40px);
+            opacity: 0;
+            transition: transform 0.25s ease-in,
+                        opacity 0.2s ease-in,
+                        color 0.3s ease;
+        }
+
+        .mobile-menu.is-open .mobile-menu-links a {
+            transform: translateY(0);
+            opacity: 1;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                        opacity 0.4s ease-out,
+                        color 0.3s ease;
+        }
+
+        .mobile-menu.is-open .mobile-menu-links li:nth-child(1) a { transition-delay: 0.1s; }
+        .mobile-menu.is-open .mobile-menu-links li:nth-child(2) a { transition-delay: 0.15s; }
+        .mobile-menu.is-open .mobile-menu-links li:nth-child(3) a { transition-delay: 0.2s; }
+        .mobile-menu.is-open .mobile-menu-links li:nth-child(4) a { transition-delay: 0.25s; }
+        .mobile-menu.is-open .mobile-menu-links li:nth-child(5) a { transition-delay: 0.3s; }
+
+        .mobile-menu-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0.4rem;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--color-gold);
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        .mobile-menu-links a:hover,
+        .mobile-menu-links a:focus {
+            color: var(--color-gold);
+        }
+
+        .mobile-menu-links a:hover::after,
+        .mobile-menu-links a:focus::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .mobile-menu-footer {
+            position: absolute;
+            bottom: 2.5rem;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.15s ease-in, transform 0.15s ease-in;
+        }
+
+        .mobile-menu.is-open .mobile-menu-footer {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.4s ease-out 0.3s, transform 0.4s ease-out 0.3s;
+        }
+
+        .mobile-menu-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-gold);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid rgba(201, 169, 98, 0.3);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-phone:hover {
+            background: var(--color-gold);
+            color: var(--color-charcoal);
+            border-color: var(--color-gold);
+        }
+
+        .mobile-menu-address {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: flex;
+            }
+        }
+
+        /* Language Selector - Refined */
+        .lang-selector {
+            position: relative;
+            margin-left: 1.5rem;
+        }
+
+        .lang-current {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%);
+            border: 1px solid rgba(201, 169, 98, 0.2);
+            border-radius: 50px;
+            padding: 0.55rem 1rem;
+            color: var(--color-cream);
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lang-current::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-burgundy) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .lang-current:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(201, 169, 98, 0.2);
+        }
+
+        .lang-current:hover::before {
+            opacity: 0.15;
+        }
+
+        .lang-selector.is-open .lang-current {
+            border-color: var(--color-gold);
+            background: rgba(201, 169, 98, 0.1);
+        }
+
+        .lang-flag {
+            font-size: 1.1rem;
+            line-height: 1;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .lang-current:hover .lang-flag {
+            transform: scale(1.1);
+        }
+
+        .lang-code {
+            transition: color 0.3s ease;
+        }
+
+        .lang-selector.is-open .lang-code {
+            color: var(--color-gold);
+        }
+
+        .lang-arrow {
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0.6;
+            margin-left: 0.1rem;
+        }
+
+        .lang-selector.is-open .lang-arrow {
+            transform: rotate(180deg);
+            opacity: 1;
+            color: var(--color-gold);
+        }
+
+        .lang-dropdown {
+            position: absolute;
+            top: calc(100% + 12px);
+            right: 0;
+            background: linear-gradient(180deg, rgba(26,26,26,0.98) 0%, rgba(20,20,20,0.98) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(201, 169, 98, 0.15);
+            border-radius: 16px;
+            padding: 0.75rem 0;
+            min-width: 180px;
+            list-style: none;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px) scale(0.96);
+            transform-origin: top right;
+            transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), visibility 0s linear 0.3s;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                        0 0 0 1px rgba(201, 169, 98, 0.1) inset;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        .lang-dropdown::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            right: 20px;
+            width: 12px;
+            height: 12px;
+            background: rgba(26,26,26,0.98);
+            border: 1px solid rgba(201, 169, 98, 0.15);
+            border-bottom: none;
+            border-right: none;
+            transform: rotate(45deg);
+        }
+
+        .lang-selector.is-open .lang-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+            transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), visibility 0s linear 0s;
+        }
+
+        .lang-dropdown li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.85rem 1.25rem;
+            color: var(--color-cream);
+            font-size: 0.9rem;
+            font-weight: 400;
+            cursor: pointer;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+        }
+
+        .lang-selector.is-open .lang-dropdown li {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .lang-selector.is-open .lang-dropdown li:nth-child(1) { transition-delay: 0.05s; }
+        .lang-selector.is-open .lang-dropdown li:nth-child(2) { transition-delay: 0.1s; }
+        .lang-selector.is-open .lang-dropdown li:nth-child(3) { transition-delay: 0.15s; }
+        .lang-selector.is-open .lang-dropdown li:nth-child(4) { transition-delay: 0.2s; }
+
+        .lang-dropdown li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) scaleY(0);
+            width: 3px;
+            height: 60%;
+            background: var(--color-gold);
+            border-radius: 0 3px 3px 0;
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .lang-dropdown li:hover {
+            background: linear-gradient(90deg, rgba(201, 169, 98, 0.12) 0%, transparent 100%);
+            color: var(--color-gold);
+            transform: translateX(4px);
+        }
+
+        .lang-dropdown li:hover::before {
+            transform: translateY(-50%) scaleY(1);
+        }
+
+        .lang-dropdown li.is-active {
+            color: var(--color-gold);
+            background: linear-gradient(90deg, rgba(201, 169, 98, 0.08) 0%, transparent 100%);
+        }
+
+        .lang-dropdown li.is-active::before {
+            transform: translateY(-50%) scaleY(1);
+            background: var(--color-gold);
+        }
+
+        .lang-dropdown li.is-active::after {
+            content: '';
+            margin-left: auto;
+            width: 18px;
+            height: 18px;
+            background: var(--color-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A1A1A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+            background-size: 11px;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: checkPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes checkPop {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+
+        .lang-dropdown li span {
+            font-size: 1.25rem;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .lang-dropdown li:hover span {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        @media (max-width: 768px) {
+            .lang-selector {
+                margin-left: auto;
+                margin-right: 0.75rem;
+            }
+
+            .lang-code {
+                display: none;
+            }
+
+            .lang-current {
+                padding: 0.5rem 0.65rem;
+                border-radius: 12px;
+            }
+
+            .lang-dropdown {
+                right: -0.5rem;
+                min-width: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SVG Heat Distortion Filter -->
+    <svg style="position:absolute;width:0;height:0;">
+        <filter id="heat-distortion" x="-50%" y="-50%" width="200%" height="200%">
+            <feTurbulence type="turbulence" baseFrequency="0.003 0.015" numOctaves="2" result="turbulence">
+                <animate attributeName="baseFrequency" dur="12s" values="0.003 0.015;0.004 0.018;0.002 0.012;0.003 0.015" repeatCount="indefinite"/>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+    </svg>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Navigation principale">
+        <a href="#home" class="nav-logo" aria-label="Retour à l'accueil">Nueva Buenos Aires</a>
+        <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav.histoire">Notre Histoire</a></li>
+            <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="#hours" data-i18n="nav.horaires">Horaires</a></li>
+            <li><a href="#contact" data-i18n="nav.reserver">Réserver</a></li>
+        </ul>
+
+        <!-- Language Selector -->
+        <div class="lang-selector" id="langSelector">
+            <button class="lang-current" id="langCurrent" aria-expanded="false" aria-haspopup="listbox">
+                <span class="lang-flag" id="langFlag">🇫🇷</span>
+                <span class="lang-code" id="langCode">FR</span>
+                <svg class="lang-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Choisir la langue">
+                <li role="option" data-lang="fr" class="is-active"><span>🇫🇷</span> Français</li>
+                <li role="option" data-lang="en"><span>🇬🇧</span> English</li>
+                <li role="option" data-lang="es"><span>🇪🇸</span> Español</li>
+                <li role="option" data-lang="nl"><span>🇳🇱</span> Nederlands</li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-bg"></div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <span class="mobile-menu-label">Menu</span>
+            </div>
+            <ul class="mobile-menu-links">
+                <li><a href="#home" data-i18n="mobile.home">Accueil</a></li>
+                <li><a href="#about" data-i18n="nav.histoire">Notre Histoire</a></li>
+                <li><a href="#menu" data-i18n="mobile.menu">La Carte</a></li>
+                <li><a href="#hours" data-i18n="nav.horaires">Horaires</a></li>
+                <li><a href="#contact" data-i18n="nav.reserver">Réserver</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="tel:+3222010880" class="mobile-menu-phone">+32 2 201 08 80</a>
+                <p class="mobile-menu-address">Rue du Page 37, Ixelles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="heat-haze-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-label" data-i18n="hero.label">Restaurant Argentin depuis 2001</p>
+            <h1 class="hero-title">Nueva <em>Buenos Aires</em></h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">L'authenticité argentine au cœur de Bruxelles</p>
+            <a href="#menu" class="hero-cta" data-i18n="hero.cta">Découvrir le Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <p class="section-label" data-i18n="about.label">Notre Histoire</p>
+            <h2 class="section-title" data-i18n="about.title" data-i18n-html="true">Un voyage <em>culinaire</em></h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="about-grid about-grid-centered">
+            <div class="about-content reveal">
+                <h3 data-i18n="about.heading">L'Authenticité Argentine à Bruxelles</h3>
+                <p data-i18n="about.p1" data-i18n-html="true">
+                    Nueva Buenos Aires est un <strong>restaurant bistro argentin unique</strong>, où chaque plat a été conçu selon un héritage classique du sud. <strong>Depuis 2001</strong>, nous avons redéfini le concept du grill argentin, transmettant notre passion pour la gastronomie et les vins.
+                </p>
+                <p data-i18n="about.p2" data-i18n-html="true">
+                    Notre menu propose une variété de plats, principalement basés sur les <strong>classiques argentins</strong> avec une approche contemporaine et raffinée. Nous sommes fiers de sélectionner les <strong>meilleurs produits</strong> avec un fort accent sur les <strong>ingrédients de saison</strong>.
+                </p>
+
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <!-- Lucide: beef -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12.5" cy="8.5" r="2.5"/><path d="M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3A6.5 6.5 0 0 0 12.5 2"/><path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5"/></svg>
+                        </div>
+                        <span class="feature-text" data-i18n="about.feature1" data-i18n-html="true">Viande Angus<br>Argentine Premium</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <!-- Lucide: wine -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg>
+                        </div>
+                        <span class="feature-text" data-i18n="about.feature2" data-i18n-html="true">Vins Argentins<br>Sélectionnés</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <!-- Lucide: chef-hat -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
+                        </div>
+                        <span class="feature-text" data-i18n="about.feature3" data-i18n-html="true">Empanadas<br>Faites Maison</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <!-- Lucide: music -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                        </div>
+                        <span class="feature-text" data-i18n="about.feature4" data-i18n-html="true">Ambiance Tango<br>& Romantique</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-header">
+            <p class="section-label" data-i18n="menu.label">La Carte</p>
+            <h2 class="section-title" data-i18n="menu.title" data-i18n-html="true">Notre <em>Menu</em></h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="menu-categories">
+            <button class="menu-category-btn active" data-filter="all" data-i18n="menu.all">Tout</button>
+            <button class="menu-category-btn" data-filter="entrees" data-i18n="menu.starters">Entrées</button>
+            <button class="menu-category-btn" data-filter="famosos" data-i18n="menu.famous">Incontournables</button>
+            <button class="menu-category-btn" data-filter="parrilla" data-i18n="menu.grill">Grillades</button>
+        </div>
+
+        <div class="menu-grid">
+
+            <!-- ENTRÉES -->
+            <div class="menu-category-label" data-category="entrees">
+                <h3 data-i18n="menu.cat.starters">Entrées</h3>
+                <p data-i18n="menu.cat.startersDesc">À partager ou pas</p>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Chips de Maíz con Guacamole</h4>
+                    <span class="menu-item-price">14€</span>
+                </div>
+                <p class="menu-item-desc">Chips de maïs avec sauce pico de gallo et guacamole maison</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Jamón Ibérico Bellota</h4>
+                    <span class="menu-item-price">9€/pers</span>
+                </div>
+                <p class="menu-item-desc">Jambon Ibérico Bellota et pain avec tomate</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Tabla de Fiambres Ibéricos</h4>
+                    <span class="menu-item-price">8€/pers</span>
+                </div>
+                <p class="menu-item-desc">Planche de charcuterie Bellota: jambon, salchichón, chorizo et pain avec tomate</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Ceviche de Pulpo y Palmitos</h4>
+                    <span class="menu-item-price">24€</span>
+                </div>
+                <p class="menu-item-desc">Poulpe et cœur de palmier, citron vert, oignon rouge, céleri, gingembre frais, patate douce et coriandre</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Chorizo Argentino Asado</h4>
+                    <span class="menu-item-price">12€</span>
+                </div>
+                <p class="menu-item-desc">Chorizo argentin grillé et pain toasté (2 pièces)</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Carpaccio a la Trufa</h4>
+                    <span class="menu-item-price">22€</span>
+                </div>
+                <p class="menu-item-desc">Carpaccio de bœuf Argentin à la truffe et copeaux de provolone</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Provoleta Asada</h4>
+                    <span class="menu-item-price">14€</span>
+                </div>
+                <p class="menu-item-desc">Fromage provolone grillé à la plancha</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="entrees">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Mini Empanadas Gourmets</h4>
+                    <span class="menu-item-price">18€</span>
+                </div>
+                <p class="menu-item-desc">6 empanadas: Bœuf Angus ou option végétarienne (Caprese, Épinard & chèvre)</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <!-- INCONTOURNABLES -->
+            <div class="menu-category-label" data-category="famosos">
+                <h3 data-i18n="menu.cat.famous">Incontournables</h3>
+                <p data-i18n="menu.cat.famousDesc">Nos plats signatures</p>
+            </div>
+
+            <div class="menu-item" data-category="famosos">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Pescado del Día</h4>
+                    <span class="menu-item-price market">P.M.</span>
+                </div>
+                <p class="menu-item-desc">Filet de poisson à la plancha, légumes grillés et accompagnement au choix</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="famosos">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Ceviche de Bacalao</h4>
+                    <span class="menu-item-price">26€</span>
+                </div>
+                <p class="menu-item-desc">Cabillaud, leche de tigre, mangue, guacamole, patate douce et coriandre fraîche</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="famosos">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Ensalada Inca</h4>
+                    <span class="menu-item-price">19€</span>
+                </div>
+                <p class="menu-item-desc">Quinoa péruvien, guacamole, patate douce, poivrons, tomate, menthe et graines de sésame</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="famosos">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Tartare Nueva Buenos Aires</h4>
+                    <span class="menu-item-price">28€</span>
+                </div>
+                <p class="menu-item-desc">Filet Angus coupé au couteau, sauce criolla argentine, miel, moutarde de Dijon et worcestershire</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="famosos">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Empanadas Argentinas</h4>
+                    <span class="menu-item-price">22€</span>
+                </div>
+                <p class="menu-item-desc">3 empanadas feuilletées au choix accompagnées d'une salade verte</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <!-- PARRILLA -->
+            <div class="menu-category-label" data-category="parrilla">
+                <h3 data-i18n="menu.cat.grill">Grillades</h3>
+                <p data-i18n="menu.cat.grillDesc">Accompagnement au choix — Sauce criolla et chimichurri incluses</p>
+            </div>
+
+            <div class="menu-item" data-category="parrilla">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Corte de Carne Angus</h4>
+                    <span class="menu-item-price">79€</span>
+                </div>
+                <p class="menu-item-desc">Rump tail 700g pour 2 personnes — 4 accompagnements, sauce criolla et chimichurri inclus</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="parrilla">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Lomo Angus Argentino</h4>
+                    <span class="menu-item-price">38€</span>
+                </div>
+                <p class="menu-item-desc">Filet pur Angus Argentin 300g</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="parrilla">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Salteado de Lomo al Coñac</h4>
+                    <span class="menu-item-price">36€</span>
+                </div>
+                <p class="menu-item-desc">Filet Angus coupé en morceaux, sauté au cognac, moutarde et miel</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="parrilla">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Bife Ancho Angus</h4>
+                    <span class="menu-item-price">28-45€</span>
+                </div>
+                <p class="menu-item-desc">Entrecôte Angus Argentine — 200g / 300g / 400g / Côte à l'os disponible</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="parrilla">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Vacío Angus Argentino</h4>
+                    <span class="menu-item-price">32€</span>
+                </div>
+                <p class="menu-item-desc">Bavette Angus Argentine 300g</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="parrilla">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Provoleta Burger</h4>
+                    <span class="menu-item-price">25€</span>
+                </div>
+                <p class="menu-item-desc">Burger Angus maison 230g, provolone, oignon rouge, cornichons, sauce maison</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+            <div class="menu-item" data-category="parrilla">
+                <div class="menu-item-header">
+                    <h4 class="menu-item-name">Spicy Burger</h4>
+                    <span class="menu-item-price">25€</span>
+                </div>
+                <p class="menu-item-desc">Burger Angus 230g, provolone, mozzarella, guacamole, jalapeños, roquette, oignons sautés</p>
+                <div class="menu-item-tags"></div>
+            </div>
+
+        </div>
+
+        <div class="menu-note">
+            <div class="menu-note-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                <p data-i18n="menu.cardNote" data-i18n-html="true"><strong>Card Payments Only</strong><br><span>Visa, Mastercard, American Express, Bancontact</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours" id="hours">
+        <div class="section-header">
+            <p class="section-label" data-i18n="hours.label">Service</p>
+            <h2 class="section-title" data-i18n="hours.title" data-i18n-html="true">Nos <em>Horaires</em></h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="hours-container reveal">
+            <!-- Today's Card -->
+            <div class="today-schedule" id="todaySchedule">
+                <div class="today-header">
+                    <div class="today-day" id="todayDay">Mercredi</div>
+                    <div class="today-date" id="todayDate">17 décembre</div>
+                </div>
+                <div class="services-grid" id="servicesGrid">
+                    <div class="service-card" id="cardMidi" data-slot="midi">
+                        <div class="service-label" data-i18n="hours.lunch">Midi</div>
+                        <div class="service-time" id="timeMidi">12h - 15h</div>
+                        <div class="service-status en-cours"><span class="spinner"></span> <span data-i18n="hours.ongoing">en cours</span></div>
+                        <div class="service-status fini"><svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12"/></svg> <span data-i18n="hours.finished">fini</span></div>
+                        <div class="next-badge" data-i18n="hours.next">prochain</div>
+                    </div>
+                    <div class="service-card" id="cardSoir" data-slot="soir">
+                        <div class="service-label" data-i18n="hours.dinner">Soir</div>
+                        <div class="service-time" id="timeSoir">19h - 23h</div>
+                        <div class="service-status en-cours"><span class="spinner"></span> <span data-i18n="hours.ongoing">en cours</span></div>
+                        <div class="service-status fini"><svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12"/></svg> <span data-i18n="hours.finished">fini</span></div>
+                        <div class="next-badge" data-i18n="hours.next">prochain</div>
+                    </div>
+                </div>
+                <div class="today-closed" id="todayClosed" style="display:none;" data-i18n="hours.closedToday">Fermé aujourd'hui</div>
+            </div>
+
+            <!-- All Days List -->
+            <div class="all-hours" id="allHoursList">
+                <div class="all-hours-row" data-day="1"><span data-i18n="hours.days.1">Lundi</span><span>—</span><span>19h - 22h30</span></div>
+                <div class="all-hours-row" data-day="2"><span data-i18n="hours.days.2">Mardi</span><span>12h - 15h</span><span>19h - 22h30</span></div>
+                <div class="all-hours-row" data-day="3"><span data-i18n="hours.days.3">Mercredi</span><span>12h - 15h</span><span>19h - 22h30</span></div>
+                <div class="all-hours-row" data-day="4"><span data-i18n="hours.days.4">Jeudi</span><span>12h - 15h</span><span>19h - 23h</span></div>
+                <div class="all-hours-row" data-day="5"><span data-i18n="hours.days.5">Vendredi</span><span>12h - 15h</span><span>19h - 23h</span></div>
+                <div class="all-hours-row" data-day="6"><span data-i18n="hours.days.6">Samedi</span><span>12h - 15h</span><span>19h - 23h</span></div>
+                <div class="all-hours-row" data-day="0"><span data-i18n="hours.days.0">Dimanche</span><span colspan="2" data-i18n="hours.closed">Fermé</span></div>
+            </div>
+        </div>
+
+        <!-- Address Bar -->
+        <div class="address-bar reveal">
+            <div class="address-bar-content">
+                <a href="https://maps.google.com/?q=Rue+du+Page+37,+1050+Ixelles,+Bruxelles" target="_blank" rel="noopener noreferrer" class="address-link">
+                    <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    Rue du Page 37, 1050 Ixelles (Châtelain), Bruxelles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <p class="section-label" data-i18n="contact.label">Réservation</p>
+            <h2 class="section-title" data-i18n="contact.title" data-i18n-html="true">Réserver une <em>Table</em></h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="contact-content reveal">
+            <p data-i18n="contact.intro">Réservez directement en ligne ou contactez-nous</p>
+
+            <!-- Reservation Button -->
+            <button type="button" class="reserve-btn" onclick="openReserveModal()" aria-label="Ouvrir le formulaire de réservation">
+                <span class="reserve-btn-icon">
+                    <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
+                </span>
+                <span data-i18n="contact.reserveBtn">Réserver une table</span>
+            </button>
+
+            <div class="contact-divider">
+                <span data-i18n="contact.or">ou contactez-nous directement</span>
+            </div>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <p class="contact-method-label" data-i18n="contact.phone">Téléphone</p>
+                    <p class="contact-method-value">
+                        <a href="tel:+3222010880">+32 2 201 08 80</a>
+                    </p>
+                </div>
+                <div class="contact-method">
+                    <p class="contact-method-label">Email</p>
+                    <p class="contact-method-value">
+                        <a href="mailto:leo@panadas.be">leo@panadas.be</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-logo">Nueva Buenos Aires</p>
+        <p class="footer-address">Rue du Page 37, 1050 Ixelles, Bruxelles</p>
+
+        <div class="footer-payment">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            <span>Card Payments Only</span>
+        </div>
+
+        <p class="footer-copyright">&copy; <span id="year"></span> Nueva Buenos Aires. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+        <p class="footer-credit" data-i18n="footer.credit" data-i18n-html="true">Conçu par <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener noreferrer">Hiliyeh Bashir</a></p>
+    </footer>
+
+    <script>
+        // Auto year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section[id]');
+
+        window.addEventListener('scroll', function() {
+            // Navbar background
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Active nav link based on scroll position
+            const scrollPos = window.scrollY + 200;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.id;
+
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+
+        function revealOnScroll() {
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Menu items staggered reveal
+        const menuItems = document.querySelectorAll('.menu-item, .menu-category-label');
+
+        function revealMenuItems() {
+            const windowHeight = window.innerHeight;
+            let delay = 0;
+
+            menuItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+
+                if (item.style.display !== 'none' && itemTop < windowHeight - 50 && !item.classList.contains('visible')) {
+                    setTimeout(() => item.classList.add('visible'), delay);
+                    delay += 80;
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealMenuItems);
+        revealMenuItems();
+
+        // Menu filter with animation
+        const menuSection = document.getElementById('menu');
+
+        document.querySelector('.menu-categories').addEventListener('click', e => {
+            const btn = e.target;
+            if (!btn.classList.contains('menu-category-btn')) return;
+
+            e.preventDefault();
+
+            // Update active button
+            document.querySelector('.menu-category-btn.active')?.classList.remove('active');
+            btn.classList.add('active');
+
+            const filter = btn.dataset.filter;
+
+            // Filter items
+            menuItems.forEach(item => {
+                const cat = item.dataset.category;
+                if (filter === 'all' || cat === filter) {
+                    item.style.display = '';
+                    item.classList.add('visible');
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Scroll to top of menu section
+            menuSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        // Service Status - New Design
+        const SCHEDULE = {
+            0: null,
+            1: [false, 0, 19*60, 22*60+30, '22h30'],
+            2: [true, 15*60, 19*60, 22*60+30, '22h30'],
+            3: [true, 15*60, 19*60, 22*60+30, '22h30'],
+            4: [true, 15*60, 19*60, 23*60, '23h'],
+            5: [true, 15*60, 19*60, 23*60, '23h'],
+            6: [true, 15*60, 19*60, 23*60, '23h']
+        };
+        const DAY_NAMES = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+        const MONTH_NAMES = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+        const MIDI_START = 12 * 60;
+
+        // Cache DOM elements
+        const scheduleElements = {
+            container: document.getElementById('todaySchedule'),
+            day: document.getElementById('todayDay'),
+            date: document.getElementById('todayDate'),
+            grid: document.getElementById('servicesGrid'),
+            closed: document.getElementById('todayClosed'),
+            cardMidi: document.getElementById('cardMidi'),
+            cardSoir: document.getElementById('cardSoir'),
+            timeMidi: document.getElementById('timeMidi'),
+            timeSoir: document.getElementById('timeSoir')
+        };
+
+        function updateServiceStatus() {
+            const now = new Date();
+            const currentDay = now.getDay();
+            const currentTime = now.getHours() * 60 + now.getMinutes();
+            const todayData = SCHEDULE[currentDay];
+
+            const { container, day, date, grid, closed, cardMidi, cardSoir, timeMidi, timeSoir } = scheduleElements;
+
+            container.classList.add('is-visible');
+            day.textContent = DAY_NAMES[currentDay];
+            date.textContent = `${now.getDate()} ${MONTH_NAMES[now.getMonth()]}`;
+
+            cardMidi.classList.remove('is-active', 'is-finished', 'is-next', 'na');
+            cardSoir.classList.remove('is-active', 'is-finished', 'is-next', 'na');
+
+            if (!todayData) {
+                grid.style.display = 'none';
+                closed.style.display = 'block';
+            } else {
+                grid.style.display = 'grid';
+                closed.style.display = 'none';
+
+                const [hasMidi, midiEnd, soirStart, soirEnd, soirEndDisplay] = todayData;
+
+                if (!hasMidi) {
+                    cardMidi.classList.add('na');
+                    timeMidi.textContent = '—';
+                } else {
+                    timeMidi.textContent = '12h - 15h';
+                    if (currentTime >= MIDI_START && currentTime <= midiEnd) {
+                        cardMidi.classList.add('is-active');
+                    } else if (currentTime > midiEnd) {
+                        cardMidi.classList.add('is-finished');
+                    } else if (currentTime < MIDI_START) {
+                        // Before midi - midi is next
+                        cardMidi.classList.add('is-next');
+                    }
+                }
+
+                timeSoir.textContent = '19h - ' + soirEndDisplay;
+                if (currentTime >= soirStart && currentTime <= soirEnd) {
+                    cardSoir.classList.add('is-active');
+                } else if (currentTime > soirEnd) {
+                    cardSoir.classList.add('is-finished');
+                } else if (currentTime > midiEnd && currentTime < soirStart) {
+                    // After midi, before soir - soir is next
+                    cardSoir.classList.add('is-next');
+                } else if (!hasMidi && currentTime < soirStart) {
+                    // No midi service (Monday), soir is next
+                    cardSoir.classList.add('is-next');
+                }
+            }
+
+            document.querySelectorAll('.all-hours-row[data-day]').forEach(row => {
+                row.classList.toggle('is-today', parseInt(row.dataset.day) === currentDay);
+            });
+        }
+
+        updateServiceStatus();
+        setInterval(updateServiceStatus, 60000);
+    </script>
+
+    <!-- Reservation Modal -->
+    <div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeReserveModal()">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
+            </div>
+
+            <h3 class="modal-title" id="modal-title" data-i18n="modal.title">Réservation en ligne</h3>
+            <p class="modal-text" data-i18n="modal.text" data-i18n-html="true">
+                Notre système de réservation en ligne arrive bientôt.<br>
+                En attendant, contactez-nous par téléphone.
+            </p>
+
+            <div class="modal-badge">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span data-i18n="modal.badge">Powered by Zenchef — Bientôt disponible</span>
+            </div>
+
+            <div class="modal-phone">
+                <p class="modal-phone-label" data-i18n="modal.phoneLabel">Réservez par téléphone</p>
+                <p class="modal-phone-number">
+                    <a href="tel:+3222010880">+32 2 201 08 80</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal functions
+        function openReserveModal() {
+            document.getElementById('reserveModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeReserveModal() {
+            document.getElementById('reserveModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on overlay click
+        document.getElementById('reserveModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeReserveModal();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeReserveModal();
+            }
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+        function toggleMobileMenu() {
+            const isOpen = mobileMenu.classList.toggle('is-open');
+            mobileMenuBtn.classList.toggle('is-active');
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+            mobileMenu.setAttribute('aria-hidden', !isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('is-open');
+            mobileMenuBtn.classList.remove('is-active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Close menu when clicking a link
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close menu on Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close menu when clicking outside
+        mobileMenu.addEventListener('click', function(e) {
+            if (e.target === mobileMenu || e.target.classList.contains('mobile-menu-bg')) {
+                closeMobileMenu();
+            }
+        });
+
+        // ==========================================
+        // i18n - Internationalization System
+        // ==========================================
+        const i18n = {
+            currentLang: 'fr',
+
+            languages: {
+                fr: { flag: '🇫🇷', code: 'FR', name: 'Français' },
+                en: { flag: '🇬🇧', code: 'EN', name: 'English' },
+                es: { flag: '🇪🇸', code: 'ES', name: 'Español' },
+                nl: { flag: '🇳🇱', code: 'NL', name: 'Nederlands' }
+            },
+
+            translations: {
+                fr: {
+                    nav: {
+                        histoire: 'Notre Histoire',
+                        menu: 'Menu',
+                        horaires: 'Horaires',
+                        reserver: 'Réserver'
+                    },
+                    mobile: {
+                        home: 'Accueil',
+                        menu: 'La Carte'
+                    },
+                    hero: {
+                        label: 'Restaurant Argentin depuis 2001',
+                        subtitle: "L'authenticité argentine au cœur de Bruxelles",
+                        cta: 'Découvrir le Menu'
+                    },
+                    about: {
+                        label: 'Notre Histoire',
+                        title: 'Un voyage <em>culinaire</em>',
+                        heading: "L'Authenticité Argentine à Bruxelles",
+                        p1: 'Nueva Buenos Aires est un <strong>restaurant bistro argentin unique</strong>, où chaque plat a été conçu selon un héritage classique du sud. <strong>Depuis 2001</strong>, nous avons redéfini le concept du grill argentin, transmettant notre passion pour la gastronomie et les vins.',
+                        p2: 'Notre menu propose une variété de plats, principalement basés sur les <strong>classiques argentins</strong> avec une approche contemporaine et raffinée. Nous sommes fiers de sélectionner les <strong>meilleurs produits</strong> avec un fort accent sur les <strong>ingrédients de saison</strong>.',
+                        feature1: 'Viande Angus<br>Argentine Premium',
+                        feature2: 'Vins Argentins<br>Sélectionnés',
+                        feature3: 'Empanadas<br>Faites Maison',
+                        feature4: 'Ambiance Tango<br>& Romantique'
+                    },
+                    menu: {
+                        label: 'La Carte',
+                        title: 'Notre <em>Menu</em>',
+                        all: 'Tout',
+                        starters: 'Entrées',
+                        famous: 'Incontournables',
+                        grill: 'Grillades',
+                        cat: {
+                            starters: 'Entrées',
+                            startersDesc: 'À partager ou pas',
+                            famous: 'Incontournables',
+                            famousDesc: 'Nos plats signatures',
+                            grill: 'Grillades',
+                            grillDesc: 'Accompagnement au choix — Sauce criolla et chimichurri incluses'
+                        },
+                        cardNote: '<strong>Paiement par Carte Uniquement</strong><br><span>Visa, Mastercard, American Express, Bancontact</span>'
+                    },
+                    hours: {
+                        label: 'Service',
+                        title: 'Nos <em>Horaires</em>',
+                        lunch: 'Midi',
+                        dinner: 'Soir',
+                        ongoing: 'en cours',
+                        finished: 'fini',
+                        next: 'prochain',
+                        closedToday: "Fermé aujourd'hui",
+                        closed: 'Fermé',
+                        days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+                        months: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+                    },
+                    contact: {
+                        label: 'Réservation',
+                        title: 'Réserver une <em>Table</em>',
+                        intro: 'Réservez directement en ligne ou contactez-nous',
+                        reserveBtn: 'Réserver une table',
+                        or: 'ou contactez-nous directement',
+                        phone: 'Téléphone'
+                    },
+                    footer: {
+                        rights: 'Tous droits réservés.',
+                        credit: 'Conçu par <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener noreferrer">Hiliyeh Bashir</a>'
+                    },
+                    modal: {
+                        title: 'Réservation en ligne',
+                        text: 'Notre système de réservation en ligne arrive bientôt.<br>En attendant, contactez-nous par téléphone.',
+                        badge: 'Powered by Zenchef — Bientôt disponible',
+                        phoneLabel: 'Réservez par téléphone'
+                    }
+                },
+
+                en: {
+                    nav: {
+                        histoire: 'Our Story',
+                        menu: 'Menu',
+                        horaires: 'Hours',
+                        reserver: 'Reserve'
+                    },
+                    mobile: {
+                        home: 'Home',
+                        menu: 'The Menu'
+                    },
+                    hero: {
+                        label: 'Argentinian Restaurant since 2001',
+                        subtitle: 'Authentic Argentine flavors in the heart of Brussels',
+                        cta: 'Discover the Menu'
+                    },
+                    about: {
+                        label: 'Our Story',
+                        title: 'A culinary <em>journey</em>',
+                        heading: 'Authentic Argentine in Brussels',
+                        p1: 'Nueva Buenos Aires is a <strong>unique Argentinian bistro-style restaurant</strong>, where every dish has been designed according to a classic Southern heritage. <strong>Since 2001</strong>, we have redefined the concept of Argentinian grill, passing on our passion for food and wine.',
+                        p2: 'Our menu features a variety of dishes, most of them based on <strong>Argentinian classics</strong> with a contemporary elevated approach. We pride ourselves with sourcing the <strong>best products</strong> with a strong focus on <strong>seasonal ingredients</strong>.',
+                        feature1: 'Premium<br>Angus Beef',
+                        feature2: 'Curated<br>Argentine Wines',
+                        feature3: 'Homemade<br>Empanadas',
+                        feature4: 'Tango &<br>Romantic Ambiance'
+                    },
+                    menu: {
+                        label: 'The Menu',
+                        title: 'Our <em>Menu</em>',
+                        all: 'All',
+                        starters: 'Starters',
+                        famous: 'Signatures',
+                        grill: 'Grill',
+                        cat: {
+                            starters: 'Starters',
+                            startersDesc: 'To share or not',
+                            famous: 'Signatures',
+                            famousDesc: 'Our signature dishes',
+                            grill: 'From the Grill',
+                            grillDesc: 'Side dish of your choice — Criolla sauce and chimichurri included'
+                        },
+                        cardNote: '<strong>Card Payments Only</strong><br><span>Visa, Mastercard, American Express, Bancontact</span>'
+                    },
+                    hours: {
+                        label: 'Service',
+                        title: 'Our <em>Hours</em>',
+                        lunch: 'Lunch',
+                        dinner: 'Dinner',
+                        ongoing: 'ongoing',
+                        finished: 'finished',
+                        next: 'next',
+                        closedToday: 'Closed today',
+                        closed: 'Closed',
+                        days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                        months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                    },
+                    contact: {
+                        label: 'Reservation',
+                        title: 'Book a <em>Table</em>',
+                        intro: 'Book online or contact us directly',
+                        reserveBtn: 'Book a table',
+                        or: 'or contact us directly',
+                        phone: 'Phone'
+                    },
+                    footer: {
+                        rights: 'All rights reserved.',
+                        credit: 'Designed by <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener noreferrer">Hiliyeh Bashir</a>'
+                    },
+                    modal: {
+                        title: 'Online Reservation',
+                        text: 'Our online reservation system is coming soon.<br>In the meantime, contact us by phone.',
+                        badge: 'Powered by Zenchef — Coming soon',
+                        phoneLabel: 'Book by phone'
+                    }
+                },
+
+                es: {
+                    nav: {
+                        histoire: 'Nuestra Historia',
+                        menu: 'Menú',
+                        horaires: 'Horarios',
+                        reserver: 'Reservar'
+                    },
+                    mobile: {
+                        home: 'Inicio',
+                        menu: 'La Carta'
+                    },
+                    hero: {
+                        label: 'Restaurante Argentino desde 2001',
+                        subtitle: 'La autenticidad argentina en el corazón de Bruselas',
+                        cta: 'Descubrir el Menú'
+                    },
+                    about: {
+                        label: 'Nuestra Historia',
+                        title: 'Un viaje <em>culinario</em>',
+                        heading: 'Autenticidad Argentina en Bruselas',
+                        p1: 'Nueva Buenos Aires es un <strong>restaurante bistró argentino único</strong>, donde cada plato ha sido diseñado según una herencia clásica del sur. <strong>Desde 2001</strong>, hemos redefinido el concepto de parrilla argentina, transmitiendo nuestra pasión por la gastronomía y los vinos.',
+                        p2: 'Nuestro menú ofrece una variedad de platos, principalmente basados en los <strong>clásicos argentinos</strong> con un enfoque contemporáneo y refinado. Nos enorgullecemos de seleccionar los <strong>mejores productos</strong> con un fuerte énfasis en <strong>ingredientes de temporada</strong>.',
+                        feature1: 'Carne Angus<br>Argentina Premium',
+                        feature2: 'Vinos Argentinos<br>Seleccionados',
+                        feature3: 'Empanadas<br>Caseras',
+                        feature4: 'Ambiente Tango<br>& Romántico'
+                    },
+                    menu: {
+                        label: 'La Carta',
+                        title: 'Nuestro <em>Menú</em>',
+                        all: 'Todo',
+                        starters: 'Entradas',
+                        famous: 'Imprescindibles',
+                        grill: 'Parrilla',
+                        cat: {
+                            starters: 'Entradas',
+                            startersDesc: 'Para compartir o no',
+                            famous: 'Imprescindibles',
+                            famousDesc: 'Nuestros platos insignia',
+                            grill: 'Parrilla',
+                            grillDesc: 'Acompañamiento a elección — Salsa criolla y chimichurri incluidos'
+                        },
+                        cardNote: '<strong>Solo Pago con Tarjeta</strong><br><span>Visa, Mastercard, American Express, Bancontact</span>'
+                    },
+                    hours: {
+                        label: 'Servicio',
+                        title: 'Nuestros <em>Horarios</em>',
+                        lunch: 'Mediodía',
+                        dinner: 'Noche',
+                        ongoing: 'en curso',
+                        finished: 'terminado',
+                        next: 'próximo',
+                        closedToday: 'Cerrado hoy',
+                        closed: 'Cerrado',
+                        days: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+                        months: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+                    },
+                    contact: {
+                        label: 'Reservación',
+                        title: 'Reservar una <em>Mesa</em>',
+                        intro: 'Reserve en línea o contáctenos directamente',
+                        reserveBtn: 'Reservar una mesa',
+                        or: 'o contáctenos directamente',
+                        phone: 'Teléfono'
+                    },
+                    footer: {
+                        rights: 'Todos los derechos reservados.',
+                        credit: 'Diseñado por <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener noreferrer">Hiliyeh Bashir</a>'
+                    },
+                    modal: {
+                        title: 'Reservación en línea',
+                        text: 'Nuestro sistema de reservación en línea llegará pronto.<br>Mientras tanto, contáctenos por teléfono.',
+                        badge: 'Powered by Zenchef — Próximamente',
+                        phoneLabel: 'Reserve por teléfono'
+                    }
+                },
+
+                nl: {
+                    nav: {
+                        histoire: 'Ons Verhaal',
+                        menu: 'Menu',
+                        horaires: 'Openingsuren',
+                        reserver: 'Reserveren'
+                    },
+                    mobile: {
+                        home: 'Home',
+                        menu: 'De Kaart'
+                    },
+                    hero: {
+                        label: 'Argentijns Restaurant sinds 2001',
+                        subtitle: 'Authentieke Argentijnse smaken in het hart van Brussel',
+                        cta: 'Ontdek het Menu'
+                    },
+                    about: {
+                        label: 'Ons Verhaal',
+                        title: 'Een culinaire <em>reis</em>',
+                        heading: 'Authentiek Argentijns in Brussel',
+                        p1: 'Nueva Buenos Aires is een <strong>uniek Argentijns bistro-restaurant</strong>, waar elk gerecht is ontworpen volgens een klassieke zuidelijke erfgoed. <strong>Sinds 2001</strong> hebben we het concept van de Argentijnse grill herdefinieerd en onze passie voor eten en wijn doorgegeven.',
+                        p2: 'Ons menu biedt een verscheidenheid aan gerechten, voornamelijk gebaseerd op <strong>Argentijnse klassiekers</strong> met een hedendaagse en verfijnde aanpak. We zijn trots op het selecteren van de <strong>beste producten</strong> met een sterke focus op <strong>seizoensgebonden ingrediënten</strong>.',
+                        feature1: 'Premium<br>Angus Rundvlees',
+                        feature2: 'Geselecteerde<br>Argentijnse Wijnen',
+                        feature3: 'Huisgemaakte<br>Empanadas',
+                        feature4: 'Tango &<br>Romantische Sfeer'
+                    },
+                    menu: {
+                        label: 'De Kaart',
+                        title: 'Ons <em>Menu</em>',
+                        all: 'Alles',
+                        starters: 'Voorgerechten',
+                        famous: 'Signature',
+                        grill: 'Grill',
+                        cat: {
+                            starters: 'Voorgerechten',
+                            startersDesc: 'Om te delen of niet',
+                            famous: 'Signature Gerechten',
+                            famousDesc: 'Onze signature gerechten',
+                            grill: 'Van de Grill',
+                            grillDesc: 'Bijgerecht naar keuze — Criolla saus en chimichurri inbegrepen'
+                        },
+                        cardNote: '<strong>Alleen Kaartbetalingen</strong><br><span>Visa, Mastercard, American Express, Bancontact</span>'
+                    },
+                    hours: {
+                        label: 'Service',
+                        title: 'Onze <em>Openingsuren</em>',
+                        lunch: 'Middag',
+                        dinner: 'Avond',
+                        ongoing: 'bezig',
+                        finished: 'afgelopen',
+                        next: 'volgende',
+                        closedToday: 'Vandaag gesloten',
+                        closed: 'Gesloten',
+                        days: ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'],
+                        months: ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december']
+                    },
+                    contact: {
+                        label: 'Reservering',
+                        title: 'Reserveer een <em>Tafel</em>',
+                        intro: 'Reserveer online of neem direct contact met ons op',
+                        reserveBtn: 'Reserveer een tafel',
+                        or: 'of neem direct contact op',
+                        phone: 'Telefoon'
+                    },
+                    footer: {
+                        rights: 'Alle rechten voorbehouden.',
+                        credit: 'Ontworpen door <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener noreferrer">Hiliyeh Bashir</a>'
+                    },
+                    modal: {
+                        title: 'Online Reserveren',
+                        text: 'Ons online reserveringssysteem komt binnenkort.<br>Neem in de tussentijd telefonisch contact met ons op.',
+                        badge: 'Powered by Zenchef — Binnenkort beschikbaar',
+                        phoneLabel: 'Reserveer telefonisch'
+                    }
+                }
+            },
+
+            // Get nested translation value
+            get(key) {
+                const keys = key.split('.');
+                let value = this.translations[this.currentLang];
+                for (const k of keys) {
+                    if (value && value[k] !== undefined) {
+                        value = value[k];
+                    } else {
+                        return key; // Return key if translation not found
+                    }
+                }
+                return value;
+            },
+
+            // Update all elements with data-i18n attribute
+            updatePage() {
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    const translation = this.get(key);
+                    if (el.hasAttribute('data-i18n-html')) {
+                        el.innerHTML = translation;
+                    } else {
+                        el.textContent = translation;
+                    }
+                });
+
+                // Update day names in hours section
+                this.updateHoursDay();
+
+                // Update html lang attribute
+                document.documentElement.lang = this.currentLang;
+            },
+
+            // Update the day name in hours section
+            updateHoursDay() {
+                const now = new Date();
+                const dayNames = this.translations[this.currentLang].hours.days;
+                const monthNames = this.translations[this.currentLang].hours.months;
+
+                const todayDay = document.getElementById('todayDay');
+                const todayDate = document.getElementById('todayDate');
+
+                if (todayDay) todayDay.textContent = dayNames[now.getDay()];
+                if (todayDate) todayDate.textContent = `${now.getDate()} ${monthNames[now.getMonth()]}`;
+            },
+
+            // Set language and update page
+            setLanguage(lang) {
+                if (!this.translations[lang]) return;
+
+                this.currentLang = lang;
+                localStorage.setItem('nba-lang', lang);
+                this.updatePage();
+                this.updateSelector();
+            },
+
+            // Update the language selector UI
+            updateSelector() {
+                const langData = this.languages[this.currentLang];
+                document.getElementById('langFlag').textContent = langData.flag;
+                document.getElementById('langCode').textContent = langData.code;
+
+                // Update active state in dropdown
+                document.querySelectorAll('.lang-dropdown li').forEach(li => {
+                    li.classList.toggle('is-active', li.dataset.lang === this.currentLang);
+                });
+            },
+
+            // Initialize
+            init() {
+                // Check saved language or detect from browser
+                const savedLang = localStorage.getItem('nba-lang');
+                const browserLang = navigator.language.split('-')[0];
+
+                if (savedLang && this.translations[savedLang]) {
+                    this.currentLang = savedLang;
+                } else if (this.translations[browserLang]) {
+                    this.currentLang = browserLang;
+                }
+
+                this.updatePage();
+                this.updateSelector();
+            }
+        };
+
+        // Language Selector Dropdown
+        const langSelector = document.getElementById('langSelector');
+        const langCurrent = document.getElementById('langCurrent');
+        const langDropdown = document.getElementById('langDropdown');
+
+        langCurrent.addEventListener('click', () => {
+            const isOpen = langSelector.classList.toggle('is-open');
+            langCurrent.setAttribute('aria-expanded', isOpen);
+        });
+
+        langDropdown.addEventListener('click', (e) => {
+            const li = e.target.closest('li');
+            if (li && li.dataset.lang) {
+                i18n.setLanguage(li.dataset.lang);
+                langSelector.classList.remove('is-open');
+                langCurrent.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close dropdown on outside click
+        document.addEventListener('click', (e) => {
+            if (!langSelector.contains(e.target)) {
+                langSelector.classList.remove('is-open');
+                langCurrent.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close dropdown on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && langSelector.classList.contains('is-open')) {
+                langSelector.classList.remove('is-open');
+                langCurrent.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Initialize i18n
+        i18n.init();
+    </script>
+</body>
+</html>
