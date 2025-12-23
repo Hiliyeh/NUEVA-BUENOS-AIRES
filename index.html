@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Nueva Buenos Aires | Restaurant Argentin - Bruxelles</title>
     <meta name="description" content="Restaurant argentin authentique à Bruxelles depuis 2001. Viande Angus grillée, empanadas, vins argentins. Quartier Châtelain.">
     <meta name="robots" content="index, follow">
@@ -52,12 +52,23 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* Safari iOS: remove tap highlight */
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Safari iOS: prevent auto-zoom on input focus (requires 16px min) */
+        @supports (-webkit-touch-callout: none) {
+            input, select, textarea {
+                font-size: 16px;
+            }
         }
 
         html {
             scroll-behavior: smooth;
             overflow-x: clip;
             background: var(--color-charcoal);
+            /* Safari iOS: prevent overscroll bounce */
+            overscroll-behavior: none;
         }
 
         body {
@@ -67,6 +78,9 @@
             background-color: var(--color-cream);
             line-height: 1.7;
             overflow-x: clip;
+            /* Safari iOS: prevent pull-to-refresh and bounce */
+            overscroll-behavior-y: none;
+            -webkit-overflow-scrolling: touch;
         }
 
         /* Grain Texture Overlay */
@@ -99,6 +113,10 @@
             right: 0;
             z-index: 1000;
             padding: 1.5rem 4rem;
+            /* Safari iOS: safe area for notch/dynamic island */
+            padding-top: max(1.5rem, env(safe-area-inset-top));
+            padding-left: max(4rem, env(safe-area-inset-left));
+            padding-right: max(4rem, env(safe-area-inset-right));
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -108,7 +126,9 @@
         nav.scrolled {
             background: rgba(26, 26, 26, 0.95);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             padding: 1rem 4rem;
+            padding-top: max(1rem, env(safe-area-inset-top));
         }
 
         .nav-logo {
@@ -132,9 +152,13 @@
         @media (max-width: 768px) {
             nav {
                 padding: 1rem 1rem;
+                padding-top: max(1rem, env(safe-area-inset-top));
+                padding-left: max(1rem, env(safe-area-inset-left));
+                padding-right: max(1rem, env(safe-area-inset-right));
             }
             nav.scrolled {
                 padding: 0.8rem 1rem;
+                padding-top: max(0.8rem, env(safe-area-inset-top));
             }
             .nav-logo {
                 font-size: 1rem;
@@ -184,7 +208,11 @@
 
         /* Hero Section */
         .hero {
+            /* Safari iOS viewport fixes - order matters (last valid wins) */
             height: 100vh;
+            height: -webkit-fill-available;
+            height: 100svh;
+            height: 100dvh;
             min-height: 700px;
             background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-burgundy-dark) 100%);
             display: flex;
@@ -529,6 +557,7 @@
         .menu-item {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 4px;
             padding: 1.5rem 1.75rem;
@@ -1138,6 +1167,8 @@
         footer {
             background: var(--color-charcoal-light);
             padding: 4rem;
+            /* Safari iOS: safe area for home indicator */
+            padding-bottom: max(4rem, calc(4rem + env(safe-area-inset-bottom)));
             text-align: center;
         }
 
@@ -1251,6 +1282,7 @@
             bottom: 0;
             background: rgba(26, 26, 26, 0.9);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1258,6 +1290,8 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.4s var(--transition-smooth);
+            /* Safari iOS: ensure modal respects safe areas */
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
         }
 
         .modal-overlay.active {
@@ -1573,7 +1607,9 @@
         .mobile-menu-header {
             position: absolute;
             top: 1.5rem;
+            top: max(1.5rem, env(safe-area-inset-top));
             left: 1.5rem;
+            left: max(1.5rem, env(safe-area-inset-left));
         }
 
         .mobile-menu-label {
@@ -1649,6 +1685,7 @@
         .mobile-menu-footer {
             position: absolute;
             bottom: 2.5rem;
+            bottom: max(2.5rem, calc(2.5rem + env(safe-area-inset-bottom)));
             text-align: center;
             opacity: 0;
             transform: translateY(10px);
